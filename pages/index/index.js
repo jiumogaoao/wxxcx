@@ -3,13 +3,20 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
+    imgUrls: [
+      '../../images/1.jpg',
+      '/images/2.jpg',
+      '/images/3.jpg'
+    ],
+    indicatorDots: false,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000,
     userInfo: {}
   },
-  //事件处理函数
-  bindViewTap: function() {
+  go:function(){
     wx.navigateTo({
-      url: '../logs/logs'
+        url: '/pages/nav/nav'
     })
   },
   onLoad: function () {
