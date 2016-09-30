@@ -25,6 +25,9 @@ App({
     }
   },
   globalData:{
-    userInfo:null
+    userInfo:null,
+    typeId:"",
+    shopId:"",
+    productId:""
   }
 })

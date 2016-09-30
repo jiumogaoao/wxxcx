@@ -1,8 +1,26 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+#s swiper{
+  width:100%;
+  height: 100%;
 }
-.log-item {
-  margin: 10rpx;
+swiper image{
+  width:100%;
+  height:100%;
+}
+#s{
+  width:100%;
+  height: 400rpx;
+}
+#p{
+  width:100%;
+  height: 200rpx;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.icon{
+  width: 200rpx;
+  height:200rpx;
+}
+.name{
+  text-align: center;
 }

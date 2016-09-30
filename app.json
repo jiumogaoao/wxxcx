@@ -1,7 +1,10 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/nav/nav"
+    "pages/nav/nav",
+    "pages/shopList/shopList",
+    "pages/productList/productList",
+    "pages/product/product"
   ],
   "window":{
     "backgroundTextStyle":"light",
