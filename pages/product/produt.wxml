@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="top">
+        <image src="{{icon}}" class="icon"/>
+        <view class="mid">
+            <view class="name">{{name}}</view>
+            <view class="dsc">{{dsc}}</view>
+        </view>
+        <view class="count">
+            <view class="price">{{price}}</view>
+            <view class="countFrame">
+                <view class="sub">-</view>
+                <input value="{{count}}"/>
+                <view class="add">+</view>
+            </view>
+        </view>
+    </view>
+    
+</view>
