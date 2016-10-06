@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="top">
+        <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" id="initSwiper" bindtap="go">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+        <view class="mid">
+            <view class="name">{{name}}</view>
+            <view class="count">
+                <view class="price">{{price}}</view>
+                <view class="countFrame">
+                    <view class="sub">-</view>
+                    <input value="{{count}}" class="value"/>
+                    <view class="add">+</view>
+                </view>
+            </view>
+        </view>
+        <view class="bottom">
+            {{dsc}}
+        </view>
+    </view>
+    
+</view>

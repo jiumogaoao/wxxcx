@@ -1,0 +1,23 @@
+swiper image{
+    width:100%;
+height:100%;
+}
+.count{
+    width:20%;
+}
+.price{
+    text-align: center;
+}
+.countFrame{
+    display: flex;
+}
+.sub{
+    width:20%;
+}
+.value{
+    width:60%;
+    text-align: center;
+}
+.add{
+    width:20%;
+}
