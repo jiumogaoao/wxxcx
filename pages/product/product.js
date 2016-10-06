@@ -15,6 +15,22 @@ Page({
     interval: 5000,
     duration: 1000
   },
+  add:function(event){
+    var newcount=this.data.count+1;
+    this.setData({count:newcount});
+  },
+  sub:function(event){
+    if(this.data.count<1){
+      return false;
+    }
+    var newcount=this.data.count-1;
+    this.setData({count:newcount});
+  },
+  goCart:function(event){
+    wx.navigateTo({
+        url: '/pages/shoppingCart/shoppingCart'
+    })
+  },
   onLoad: function () {
       console.log(app.globalData.productId)
   }

@@ -3,16 +3,21 @@ swiper image{
 height:100%;
 }
 .count{
-    width:20%;
+    width:100%;
+    display:flex;
+    margin-top: 20rpx;
 }
 .price{
     text-align: center;
+    width: 40%;
 }
 .countFrame{
     display: flex;
+    width: 30%;
 }
 .sub{
     width:20%;
+    text-align: center;
 }
 .value{
     width:60%;
@@ -20,4 +25,17 @@ height:100%;
 }
 .add{
     width:20%;
+    text-align: center;
+}
+.name{
+    font-size: 50rpx;
+    margin-left: 20rpx;
+}
+.go{
+    text-align: center;
+    width: 30%
+}
+.bottom{
+    padding: 20rpx;
+    line-height: 30rpx;
 }

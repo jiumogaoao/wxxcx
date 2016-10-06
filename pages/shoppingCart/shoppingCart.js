@@ -40,11 +40,6 @@ Page({
         url: '/pages/product/product'
     })
   },
-  goCart:function(event){
-    wx.navigateTo({
-        url: '/pages/shoppingCart/shoppingCart'
-    })
-  },
   onLoad: function () {
       console.log(app.globalData.shopId)
   }

@@ -20,4 +20,4 @@
             </view>
         </block>
 </scroll-view>
-<view id="go" bindtap="goCart">去购物车</view>
+<view id="go">去结算</view>

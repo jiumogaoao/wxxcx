@@ -4,7 +4,8 @@
     "pages/nav/nav",
     "pages/shopList/shopList",
     "pages/productList/productList",
-    "pages/product/product"
+    "pages/product/product",
+    "pages/shoppingCart/shoppingCart"
   ],
   "window":{
     "backgroundTextStyle":"light",
