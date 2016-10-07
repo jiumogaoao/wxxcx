@@ -12,7 +12,7 @@
                      <view class="price">{{item.price}}</view>
                      <view class="countFrame">
                         <view class="sub" bindtap="sub" data-pid="{{item.id}}">-</view>
-                        <input value="{{item.count}}" class="value"/>
+                        <input value="{{count[item.id]?count[item.id].count:0}}" class="value"/>
                         <view class="add" bindtap="add" data-pid="{{item.id}}">+</view>
                      </view>
                 </view>

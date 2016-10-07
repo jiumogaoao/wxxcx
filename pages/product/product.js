@@ -1,8 +1,10 @@
 var app=getApp();
 Page({
   data: {
+    id:"",
+    shop:"",
     imgUrls: [
-      '../../images/1.jpg',
+      '/images/1.jpg',
       '/images/2.jpg',
       '/images/3.jpg'
     ],
@@ -16,15 +18,12 @@ Page({
     duration: 1000
   },
   add:function(event){
-    var newcount=this.data.count+1;
-    this.setData({count:newcount});
+    app.add(this.data.id,this.data.shop);
+    this.setData({count:app.balance[app.globalData.productId]?app.balance[app.globalData.productId].count:0});
   },
   sub:function(event){
-    if(this.data.count<1){
-      return false;
-    }
-    var newcount=this.data.count-1;
-    this.setData({count:newcount});
+    app.sub(this.data.id);
+    this.setData({count:app.balance[app.globalData.productId]?app.balance[app.globalData.productId].count:0});
   },
   goCart:function(event){
     wx.navigateTo({
@@ -33,5 +32,14 @@ Page({
   },
   onLoad: function () {
       console.log(app.globalData.productId)
+      this.setData({
+        id:app.productList[app.globalData.productId].id,
+        shop:app.productList[app.globalData.productId].shop,
+        imgUrls: app.productList[app.globalData.productId].imgUrls,
+    name:app.productList[app.globalData.productId].name,
+    dsc:app.productList[app.globalData.productId].dsc,
+    price:app.productList[app.globalData.productId].price,
+    count:app.balance[app.globalData.productId]?app.balance[app.globalData.productId].count:0
+      })
   }
 })

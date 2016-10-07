@@ -7,3 +7,51 @@
     height:10%;
     line-height: 130rpx;
 }
+.shopTitle{
+    height:100rpx;
+    background-color: #c4e8f7;
+    line-height: 100rpx;
+    text-indent: 20rpx;
+}
+.point{
+    display: flex;
+    height:150rpx;
+    padding: 20rpx;
+    border-bottom: 1px solid #000;
+}
+.left{
+    width:150rpx;
+}
+.left image{
+    width:150rpx;
+    height:150rpx;
+}
+.center{
+    width:400rpx ;
+}
+.right{
+    width:200rpx;
+}
+.price{
+    text-align: center;
+}
+.count{
+    text-align: center;
+    margin-top: 20rpx;
+}
+.dsc{
+    margin-top: 20rpx;
+}
+.bottom{
+    display:flex;
+}
+.luggage{
+    width:50%;
+    text-align: center;
+    line-height: 100rpx;
+}
+.total{
+    width:50%;
+    text-align: center;
+    line-height: 100rpx;
+}

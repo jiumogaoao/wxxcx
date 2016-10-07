@@ -22,8 +22,8 @@
                     </block>
                 </view>
                 <view class="bottom">
-                    <view class="total">{{item.total}}</view>
-                    <view class="luggage">{{item.luggage}}</view>
+                    <view class="luggage">运费：{{item.luggage}}</view>
+                    <view class="total">合计：{{item.total}}</view>
                 </view>
             </view>
         </block>
