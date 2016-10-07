@@ -20,4 +20,4 @@
             </view>
         </block>
 </scroll-view>
-<view id="go">去结算</view>
+<view id="go" bindtap="goBalance">去结算</view>

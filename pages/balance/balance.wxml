@@ -1,0 +1,31 @@
+<scroll-view class="container" scroll-y="true">
+    <block wx:for="{{point}}" wx:for-index="idx" wx:for-item="item">
+            <view class="group" data-pid="{{item.id}}">
+                <view class="top">
+                    <view class="shopTitle">{{item.name}}</view>
+                </view>
+                <view class="middle">
+                    <block wx:for="{{item.list}}" wx:for-item="point">
+                        <view class="point">
+                            <view class="left">
+                                <image src="{{point.icon}}" class="icon"/>
+                            </view>
+                            <view class="center">
+                                <view class="title">{{point.title}}</view>
+                                <view class="dsc">{{point.dsc}}</view>
+                            </view>
+                            <view class="right">
+                                <view class="price">{{point.price}}</view>
+                                <view class="count">{{point.count}}</view>
+                            </view>
+                        </view>
+                    </block>
+                </view>
+                <view class="bottom">
+                    <view class="total">{{item.total}}</view>
+                    <view class="luggage">{{item.luggage}}</view>
+                </view>
+            </view>
+        </block>
+</scroll-view>
+<view id="go" bindtap="goPay">去支付</view>

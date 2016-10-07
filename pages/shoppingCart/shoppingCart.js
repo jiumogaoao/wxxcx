@@ -40,6 +40,11 @@ Page({
         url: '/pages/product/product'
     })
   },
+  goBalance:function(){
+    wx.navigateTo({
+        url: '/pages/balance/balance'
+    })
+  },
   onLoad: function () {
       console.log(app.globalData.shopId)
   }

@@ -5,7 +5,8 @@
     "pages/shopList/shopList",
     "pages/productList/productList",
     "pages/product/product",
-    "pages/shoppingCart/shoppingCart"
+    "pages/shoppingCart/shoppingCart",
+    "pages/balance/balance"
   ],
   "window":{
     "backgroundTextStyle":"light",
