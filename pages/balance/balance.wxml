@@ -11,21 +11,24 @@
                                 <image src="{{point.icon}}" class="icon"/>
                             </view>
                             <view class="center">
-                                <view class="title">{{point.title}}</view>
+                                <view class="title">{{point.name}}</view>
                                 <view class="dsc">{{point.dsc}}</view>
                             </view>
                             <view class="right">
-                                <view class="price">{{point.price}}</view>
-                                <view class="count">{{point.count}}</view>
+                                <view class="price">￥{{point.price}}</view>
+                                <view class="count">{{count[point.id].count}}</view>
                             </view>
                         </view>
                     </block>
                 </view>
                 <view class="bottom">
-                    <view class="luggage">运费：{{item.luggage}}</view>
-                    <view class="total">合计：{{item.total}}</view>
+                    <view class="luggage">运费：￥{{item.luggage}}</view>
+                    <view class="total">合计：￥{{item.total}}</view>
                 </view>
             </view>
         </block>
 </scroll-view>
-<view id="go" bindtap="goPay">去支付</view>
+<button id="go" bindtap="goPay" type="warn">(￥{{total}})去支付</button>
+<modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
+  <view>没appID,不能做了~~</view>
+</modal>

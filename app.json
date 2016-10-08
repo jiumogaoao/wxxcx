@@ -6,7 +6,8 @@
     "pages/productList/productList",
     "pages/product/product",
     "pages/shoppingCart/shoppingCart",
-    "pages/balance/balance"
+    "pages/balance/balance",
+    "pages/place/place"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -39,8 +39,12 @@
     text-align: center;
     margin-top: 20rpx;
 }
+.title{
+   text-indent: 20rpx;  
+}
 .dsc{
     margin-top: 20rpx;
+    text-indent: 20rpx; 
 }
 .bottom{
     display:flex;

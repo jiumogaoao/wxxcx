@@ -34,8 +34,8 @@ Page({
         url: '/pages/shoppingCart/shoppingCart'
     })
   },
-  onLoad: function () {
+  onShow: function () {
       console.log(app.globalData.shopId)
-      this.setData({point:productList()});
+      this.setData({point:productList(),count:app.balance});
   }
 })

@@ -1,0 +1,32 @@
+.container{
+    height: 90%;
+}
+#go{
+    width:100%;
+    text-align: center;
+    height:10%;
+    line-height: 130rpx;
+}
+image.icon{
+    width:200rpx;
+    height: 200rpx;
+    border-radius: 200rpx;
+    display: block;
+    margin: auto;
+    margin-top: 50rpx;
+}
+.point{
+    display: flex;
+    margin-top: 30rpx;
+}
+.left{
+    width: 30%;
+    text-align: right;
+}
+.right{
+    width: 60%;
+    border-bottom: 1px solid #000;
+}
+.right input{
+    width:100%;
+}

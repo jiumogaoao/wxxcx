@@ -8,8 +8,7 @@ Page({
       '/images/2.jpg',
       '/images/3.jpg'
     ],
-    point:[],
-    alertStr:"323"
+    point:[]
   },
   goType:function(event){
     app.globalData.navId=event.currentTarget.dataset.pid;
@@ -17,7 +16,7 @@ Page({
         url: '/pages/shopList/shopList'
     })
   },
-  onLoad: function () {
+  onShow: function () {
     var getPoint=[];
     for(i in app.nav){
       getPoint.push(app.nav[i]);

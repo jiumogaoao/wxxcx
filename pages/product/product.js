@@ -3,13 +3,9 @@ Page({
   data: {
     id:"",
     shop:"",
-    imgUrls: [
-      '/images/1.jpg',
-      '/images/2.jpg',
-      '/images/3.jpg'
-    ],
-    name:"商品1",
-    dsc:"描述描述描述描述",
+    imgUrls: [],
+    name:"",
+    dsc:"",
     price:99,
     count:1,
     indicatorDots: false,
@@ -26,7 +22,7 @@ Page({
     this.setData({count:app.balance[app.globalData.productId]?app.balance[app.globalData.productId].count:0});
   },
   goCart:function(event){
-    wx.navigateTo({
+    wx.redirectTo({
         url: '/pages/shoppingCart/shoppingCart'
     })
   },

@@ -42,6 +42,10 @@
 }
 .point .sub{
     width:20%;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 0;
 }
 .point .value{
     width:60%;
@@ -49,6 +53,10 @@
 }
 .point .add{
     width:20%;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    padding: 0;
 }
 #go{
     width:100%;

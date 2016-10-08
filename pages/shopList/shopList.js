@@ -9,7 +9,7 @@ Page({
         url: '/pages/productList/productList'
     })
   },
-  onLoad: function () {
+  onShow: function () {
       console.log(app.globalData.navId)
 var shopList=[];
 for(i in app.shop){

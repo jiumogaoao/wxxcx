@@ -11,13 +11,13 @@
         <view class="mid">
             <view class="name">{{name}}</view>
             <view class="count">
-                <view class="price">{{price}}</view>
+                <view class="price">￥{{price}}</view>
                 <view class="countFrame">
-                    <view class="sub" bindtap="sub">-</view>
+                    <button class="sub" bindtap="sub" type="default">-</button>
                     <input value="{{count}}" class="value"/>
-                    <view class="add" bindtap="add">+</view>
+                    <button class="add" bindtap="add" type="default">+</button>
                 </view>
-                <view class="go" bindtap="goCart">去购物车</view>
+                <button class="go" bindtap="goCart" type="default">去购物车</button>
             </view>
         </view>
         <view class="bottom">
