@@ -1,0 +1,69 @@
+.head{
+    background-color: #fff;
+    margin-top: 20rpx;
+    height: 100rpx;
+}
+.listHead{
+    width:100%;
+    display: flex;
+    position:relative;
+    top: 30rpx;
+    text-align: center;
+    font-size: 30rpx;
+}
+.listHead .left{
+    width:50%;
+    border-right: 1px solid #adabb0;
+}
+.listHead .center{
+    width:30%;
+    border-right: 1px solid #adabb0;
+}
+.listHead .right{
+    width:20%;
+}
+.sw{
+    width:100%;
+    position: absolute;
+    top:125rpx;
+    bottom:0rpx;
+    background-color: #fff;
+}
+.list{
+    margin-top:64rpx;
+    display: flex;
+    font-size: 30rpx;
+    text-align: center;
+}
+.list .left{
+    width:50%;
+}
+.list .center{
+    width:30%;
+}
+.list .right{
+    width:20%;
+    color: #f57d62;
+    text-decoration: underline;
+}
+.wifi{
+    width:147rpx;
+    height:128rpx;
+    display:block;
+    margin: auto;
+    margin-top: 40rpx;
+}
+.dsc{
+    width:70%;
+    margin: auto;
+    text-align: center;
+    font-size: 40rpx;
+    margin-top: 40rpx;
+    line-height: 60rpx;
+    color: #adabb0;
+}
+.red{
+    display: inline;
+    color: #f57d62;
+    text-decoration: underline;
+}

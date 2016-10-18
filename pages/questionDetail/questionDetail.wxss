@@ -1,0 +1,6 @@
+.container button{
+    width:90%;
+    position: absolute;
+    left:5%;
+    bottom:20rpx;
+}

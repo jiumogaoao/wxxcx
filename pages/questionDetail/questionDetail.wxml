@@ -1,0 +1,7 @@
+<view class="container">
+    <view>建设中</view>
+    <button bindtap="fedback">反馈</button>
+</view>
+<modal title="错误" class="error" hidden="{{popError}}" no-cancel bindconfirm="errClose">
+    {{error}}
+</modal>

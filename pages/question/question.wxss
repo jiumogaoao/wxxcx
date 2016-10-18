@@ -1,0 +1,48 @@
+.head{
+    background-color: #fff;
+    margin-top: 20rpx;
+    height: 100rpx;
+}
+.listFrame{
+    width: 100%;
+    position: absolute;
+    top:125rpx;
+    bottom:0rpx;
+    background-color: #fff;
+}
+.list{
+    margin-top:64rpx;
+    display: flex;
+    font-size: 30rpx;
+    text-align: center;
+}
+.container button{
+    width:90%;
+    position: absolute;
+    left:5%;
+    bottom:20rpx;
+}
+.head .icon{
+    width:80rpx;
+    height:80rpx;
+    float:left;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+}
+.head .title{
+    float:left;
+    margin-left: 20rpx;
+    line-height: 121rpx;
+}
+.list .icon{
+    width:50rpx;
+    height:50rpx;
+    float: left;
+    margin-left: 20rpx;
+}
+.list .title{
+    margin-left: 20rpx;
+    line-height: 50rpx;
+    color: #f57d62;
+    text-decoration: underline;
+}

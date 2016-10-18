@@ -1,0 +1,42 @@
+<scroll-view scroll-y="true" class="netSet">
+    <view class="head">
+        <view class="title">WIFI</view>
+    </view>
+    <view class="list">
+        <view class="left">状态</view>
+        <view class="right">
+            <picker bindchange="stateChange" value="{{netSet.state}}" range="{{netSet.stateArry}}">
+                <view class="picker">
+                {{netSet.stateArry[netSet.state]}}
+                </view>
+            </picker>
+        </view>
+    </view>
+    <view class="list">
+        <view class="left">名称</view>
+        <view class="right">
+            <input placeholder="请输入wifi名" value="{{netSet.name}}" bindchange="nameChange"/>
+        </view>
+    </view>
+    <view class="list">
+        <view class="left">密码</view>
+        <view class="right">
+            <input placeholder="请输入密码" password="true" value="{{netSet.key}}" bindchange="keyChange"/>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="left">线路模式</view>
+        <view class="right">
+            <view class="point" bindtap="lineChange" data-id="0">
+                <icon type="{{netSet.line?'circle':'success'}}" size="25" color="{{netSet.line?'#ddd':'#f57d62'}}"/>自动选择最快
+            </view>
+            <view class="point" bindtap="lineChange" data-id="1">
+                <icon type="{{netSet.line?'success':'circle'}}" size="25" color="{{netSet.line?'#f57d62':'#ddd'}}"/>手动
+            </view>
+        </view>
+    </view>
+    <view class="buttonFrame">
+        <button type="default" bindtap="netSetCannel">取消</button>
+        <button bindtap="netSetSave">保存</button>
+    </view>
+</scroll-view>

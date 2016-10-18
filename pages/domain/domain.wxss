@@ -1,0 +1,73 @@
+.head{
+    background-color: #fff;
+    margin-top: 20rpx;
+    height: 100rpx;
+}
+.listHead{
+    width:100%;
+    display: flex;
+    position:relative;
+    top: 30rpx;
+    text-align: center;
+    font-size: 30rpx;
+}
+.listHead .left{
+    width:40%;
+    border-right: 1px solid #adabb0;
+}
+.listHead .center{
+    width:40%;
+    border-right: 1px solid #adabb0;
+}
+.listHead .right{
+    width:20%;
+}
+.listFrame{
+    width: 100%;
+    position: absolute;
+    top:125rpx;
+    bottom:0rpx;
+    background-color: #fff;
+}
+.list{
+    margin-top:64rpx;
+    display: flex;
+    font-size: 30rpx;
+    text-align: center;
+}
+.list .left{
+    width:40%;
+}
+.list .center{
+    width:40%;
+}
+.list .right{
+    width:20%;
+    color: #f57d62;
+    text-decoration: underline;
+}
+.container button{
+    width:90%;
+    position: absolute;
+    left:5%;
+    bottom:20rpx;
+}
+.popList{
+    display: flex;
+    margin-bottom: 20rpx;
+}
+.popList .left{
+    width: 30%;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.popList .right{
+    width: 70%;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-bottom: 1px solid #333;
+}
+.popList .right input{
+    height: 100rpx;
+    line-height: 100rpx;
+}

@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="space"></view>
+    <image class="logo" src="/images/logo.png"/>
+    <view class="top">
+        <view class="left">账号</view>
+        <view class="right">{{ad}}</view>
+        <view class="changePhone" bindtap="phoneChange">更换手机号码</view>
+    </view>
+    <view class="bottom">
+        <view class="left">设备</view>
+        <scroll-view scroll-y="true" class="right">
+            <view wx:for="{{list}}" class="list">
+                {{item.SN}}
+            </view>
+        </scroll-view>
+    </view>
+    <view class="buttonFrame">
+        <button type="default" bindtap="logout">退出登录</button>
+        <button bindtap="logout">切换账号</button>
+    </view>
+    <view class="dsc">可使用手机号、密码登录<view class="red">番茄路由官网</view></view>
+</view>
+<modal title="错误" class="error" hidden="{{popError}}" no-cancel bindconfirm="errClose">
+    {{error}}
+</modal>

@@ -1,0 +1,8 @@
+<view class="container">
+    <view class="space"></view>
+    <input bindchange="textchange" value="{{fedBack}}"/>
+    <button bindtap="send">提交</button>
+</view>
+<modal title="错误" class="error" hidden="{{popError}}" no-cancel bindconfirm="errClose">
+    {{error}}
+</modal>

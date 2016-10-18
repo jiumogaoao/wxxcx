@@ -1,0 +1,20 @@
+<view class="container">
+    <view class="space"></view>
+    <image class="logo" src="/images/logo.png"/>
+    <view class="listFrame">
+        <view class="list">
+            <view class="left"><image src="/images/icon0.png" class="icon"/></view>
+            <view class="right"><input placeholder="请输入新手机号码" value="{{phone}}" bindchange="phoneChange"/></view>
+        </view>
+        <view class="list">
+            <view class="left"><image src="/images/icon1.png" class="icon"/></view>
+            <view class="right"><input placeholder="请输入验证码" bindchange="codeChange" value="{{code}}"/></view>
+            <button bindtap="getCode" disabled="{{!phone||codeLock}}">{{lockCount}}</button>
+        </view>
+    </view>
+    <button bindtap="changePhone" class="bottomButton">更换</button>
+    <view class="dsc">如无法更换手机号，请与<view class="red">客服MM</view>联系</view>
+</view>
+<modal title="错误" class="error" hidden="{{popError}}" no-cancel bindconfirm="errClose">
+    {{error}}
+</modal>

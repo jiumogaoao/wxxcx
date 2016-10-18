@@ -1,11 +1,34 @@
 <!--index.wxml-->
 <view class="container">
-  <swiper indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" id="initSwiper" bindtap="go">
-    <block wx:for="{{imgUrls}}">
-      <swiper-item>
-        <image src="{{item}}" class="slide-image" width="355" height="150"/>
-      </swiper-item>
-    </block>
-  </swiper>
+  <view class="point" bindtap="goER">
+    <view class="left">扫条形码</view>
+    <view class="right">></view>
+  </view>
+  <view class="point" bindtap="goRemotely">
+    <view class="left">远程管理</view>
+    <view class="right">></view>
+  </view>
+  <view class="point" bindtap="goDomain">
+    <view class="left">域名管理</view>
+    <view class="right">></view>
+  </view>
+  <view class="point" bindtap="goQuestion">
+    <view class="left">常见问题</view>
+    <view class="right">></view>
+  </view>
+  <view class="point" bindtap="goLogin">
+    <view class="left">登录/切换账号</view>
+    <view class="right">></view>
+  </view>
 </view>
+<modal title="扫码成功" confirm-text="确定" cancel-text="切换手机号"  hidden="{{popSc}}" bindconfirm="toRouterList" bindcancel="toScaned">
+  <view>设备SN码：{{SN}}</view>
+  <view>绑定手机号：{{phone}}</view>
+</modal>
+
+<modal title="已绑定" class="modal" hidden="{{popBinded}}" no-cancel bindconfirm="binded">
+  该设备已被{{bindedPhone}}绑定，如需解绑请登录该设备的本地管理页面。
+</modal>
+<modal title="错误" class="error" hidden="{{popError}}" no-cancel bindconfirm="errClose">
+    {{error}}
+</modal>

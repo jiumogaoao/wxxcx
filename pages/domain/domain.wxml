@@ -1,0 +1,31 @@
+<view class="container">
+    <view class="space"></view>
+    <view class="head">
+        <view class="listHead">
+            <view class="left">地址/IP</view>
+            <view class="center">备注</view>
+            <view class="right">操作</view>
+        </view>
+    </view>
+    <scroll-view scroll-y="true" class="listFrame">
+        <view wx:for="{{list}}" class="list">
+            <view class="left">{{item.ip}}</view>
+            <view class="center">{{item.name}}</view>
+            <view class="right" bindtap="edit" data-id="{{item.id}}" data-ip="{{item.ip}}" data-name="{{item.name}}">编辑</view>
+        </view>
+    </scroll-view>
+    <button bindtap="creat">添加</button>
+</view>
+<modal title="{{popTitle}}" confirm-text="确定" cancel-text="取消"  hidden="{{pop}}" bindconfirm="add" bindcancel="cancel">
+  <view class="popList">
+    <view class="left">地址/IP：</view>
+    <view class="right"><input value="{{popIP}}" bindchange="changeIP"/></view>
+  </view>
+  <view class="popList">
+    <view class="left">备注：</view>
+    <view class="right"><input value="{{popName}}" bindchange="changeName"/></view>
+  </view>
+</modal>
+<modal title="错误" class="error" hidden="{{popError}}" no-cancel bindconfirm="errClose">
+    {{error}}
+</modal>

@@ -1,0 +1,12 @@
+.container input{
+    width:90%;
+    height: 200rpx;
+    margin: auto;
+    border: 1px solid #bfbfbf;
+    background-color: #fff;
+    margin-top: 20rpx;
+}
+button{
+    width:90%;
+    margin-top: 20rpx;
+}

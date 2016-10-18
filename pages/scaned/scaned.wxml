@@ -1,0 +1,28 @@
+<view class="container">
+    <view class="space"></view>
+    <image class="logo" src="/images/SN.png"/>
+    <view class="SN">设备S/N码：{{SN}}</view>
+    <view class="listFrame">
+        <view class="list">
+            <view class="left"><image src="/images/icon0.png" class="icon"/></view>
+            <view class="right"><input placeholder="请输入您的手机号码" value="{{phone}}" bindchange="phoneChange"/></view>
+        </view>
+        <view class="list">
+            <view class="left"><image src="/images/icon1.png" class="icon"/></view>
+            <view class="right"><input placeholder="请输入验证码" bindchange="codeChange" value="{{code}}"/></view>
+            <button bindtap="getCode" disabled="{{!phone||codeLock}}">{{lockCount}}</button>
+        </view>
+        <view class="list">
+            <view class="left"><image src="/images/icon2.png" class="icon"/></view>
+            <view class="right"><input  placeholder="请输入您的登录密码"password value="{{key}}" bindChange="keyChange"/></view>
+        </view>
+    </view>
+    <view class="buttonFrame">
+        <button type="default" bindtap="cannel">取消</button>
+        <button bindtap="regest">注册并绑定</button>
+    </view>
+    <view class="dsc">可使用手机号、密码登录<view class="red">番茄路由官网</view></view>
+</view>
+<modal title="错误" class="error" hidden="{{popError}}" no-cancel bindconfirm="errClose">
+    {{error}}
+</modal>

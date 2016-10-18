@@ -1,0 +1,30 @@
+<view class="container">
+    <view class="nav">
+        <view class="point {{current==0?'hl':''}}" data-number="0" bindtap="navTap">上网设置</view>
+        <view class="point {{current==1?'hl':''}}" data-number="1" bindtap="navTap">防蹭网</view>
+        <view class="point {{current==2?'hl':''}}" data-number="2" bindtap="navTap">黑名单</view>
+        <view class="bottomLine" style="left:{{current*33.3}}%"></view>
+    </view>
+    <view class="SN">设备S/N码：{{SN}}</view>
+    <view class="sw">
+        <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swChange" current="{{current}}">
+                <swiper-item>
+                    <include src="netSet.wxml"/>
+                </swiper-item>
+                <swiper-item>
+                    <include src="noRub.wxml"/>
+                </swiper-item>
+                <swiper-item>
+                    <include src="blackList.wxml"/>
+                </swiper-item>
+        </swiper>
+    </view>
+    
+</view>
+<toast hidden="{{toastHidden}}" bindchange="toastChange">
+   {{toastText}}
+</toast>
+<modal title="错误" class="error" hidden="{{popError}}" no-cancel bindconfirm="errClose">
+    {{error}}
+</modal>

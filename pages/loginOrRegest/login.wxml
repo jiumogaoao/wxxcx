@@ -1,0 +1,14 @@
+<scroll-view scroll-y="true" class="login">
+    <view class="listFrame">
+        <view class="list">
+            <view class="left"><image src="/images/icon0.png" class="icon"/></view>
+            <view class="right"><input placeholder="请输入您的手机号码" value="{{phone}}" bindchange="phoneChange"/></view>
+        </view>
+        <view class="list">
+            <view class="left"><image src="/images/icon2.png" class="icon"/></view>
+            <view class="right"><input placeholder="请输入您的密码" password value="{{key}}" bindChange="keyChange"/></view>
+        </view>
+    </view>
+    <button bindtap="login" class="bottomButton">登录</button>
+    <view class="dsc">如无法更换手机号号，请与<view class="red">客服MM</view>联系</view>
+</scroll-view>

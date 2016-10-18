@@ -1,0 +1,92 @@
+var out={};
+out.login=function(phone,key,sc,err){
+    sc({
+        user:{
+            phone:"12345678",
+            id:"123"
+        },
+        domainList:{
+          "1":{id:"1",ip:"192.168.122.122",name:"百度"},
+          "2":{id:"2",ip:"192.168.122.122",name:"百度2"}
+        },
+        routerList:{
+        "WF271511206EA0556D":{SN:"WF271511206EA0556D",name:"某人的路由"},
+        "WF271511206EA05561":{SN:"WF271511206EA05561",name:"某人的路由1"}
+        }
+    });
+};
+out.regest=function(phone,key,code,SN,sc,err){
+    sc({
+        user:{
+            phone:"12345678",
+            id:"123"
+        },
+        domainList:{},
+        routerList:{}
+    });
+};
+out.getCode=function(phone,sc,err){
+    sc();
+};
+out.changePhone=function(user,phone,code,sc,err){
+    sc();
+}
+out.addRouter=function(SN,user,sc,err){
+    sc();
+}
+out.editDomain=function(id,ip,name,user,sc,err){
+    sc();
+}
+out.addDomain=function(ip,name,sc,err){
+    sc({id:"3"});
+};
+out.fedBack=function(text,user,sc,err){
+    sc({id:"3"});
+};
+out.getDetail=function(SN,sc,err){
+    sc({
+        netSet:{
+      stateArry:["开启","关闭"],
+      state:0,
+      name:"",
+      key:"",
+      line:0
+    },
+    noRub:[
+      {id:"1",name:"1",up:0,down:0},
+      {id:"2",name:"2",up:0,down:0}
+    ],
+    blackList:[
+      {id:"1",name:"1"},
+      {id:"2",name:"2"}
+    ]
+    });
+};
+out.netSet=function(SN,state,name,key,line,sc,err){
+    sc();
+}
+out.blackList=function(SN,id,sc,err){
+    sc({       
+    noRub:[
+      {id:"1",name:"1",up:0,down:0},
+      {id:"2",name:"2",up:0,down:0}
+    ],
+    blackList:[
+      {id:"1",name:"1"},
+      {id:"2",name:"2"}
+    ]
+    })
+}
+out.outBlack=function(SN,id,sc,err){
+    sc({       
+    noRub:[
+      {id:"1",name:"1",up:0,down:0},
+      {id:"2",name:"2",up:0,down:0}
+    ],
+    blackList:[
+      {id:"1",name:"1"},
+      {id:"2",name:"2"}
+    ]
+    })
+}
+module.exports = out

@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="space"></view>
+    <view class="head">
+        <view class="listHead">
+            <view class="left">S/N码</view>
+            <view class="center">wifi名</view>
+            <view class="right">操作</view>
+        </view>
+    </view>
+    <scroll-view scroll-y="true" class="sw" style="display:{{list.length?'block':'none'}}">
+    <view wx:for="{{list}}" class="list">
+        <view class="left">{{item.SN}}</view>
+        <view class="center">{{item.name}}</view>
+        <view class="right" bindtap="toRemotely" data-sn="{{item.SN}}">进入</view>
+    </view>
+    </scroll-view>
+    <block wx:if="{{list.length==0}}">
+        <image src="/images/wifi.png" class="wifi"/>
+        <view class="dsc">还没找到你绑定的设备，请使用<view class="red">扫条形码</view>功能进行绑定吧！</view>
+    </block>
+</view>
+<modal title="错误" class="error" hidden="{{popError}}" no-cancel bindconfirm="errClose">
+    {{error}}
+</modal>

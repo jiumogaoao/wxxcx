@@ -1,0 +1,23 @@
+<view class="container">
+    <view class="space"></view>
+    <image class="logo" src="/images/logo.png"/>
+    <view class="nav">
+        <view class="point {{current==0?'hl':''}}" data-number="0" bindtap="navTap">登录</view>
+        <view class="point {{current==1?'hl':''}}" data-number="1" bindtap="navTap">注册</view>
+        <view class="bottomLine" style="left:{{current*50}}%"></view>
+    </view>
+    <view class="sw">
+        <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swChange" current="{{current}}">
+                <swiper-item>
+                    <include src="login.wxml"/>
+                </swiper-item>
+                <swiper-item>
+                    <include src="regest.wxml"/>
+                </swiper-item>
+        </swiper>
+    </view>
+</view>
+<modal title="错误" class="error" hidden="{{popError}}" no-cancel bindconfirm="errClose">
+    {{error}}
+</modal>

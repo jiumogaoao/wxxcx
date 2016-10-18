@@ -1,0 +1,19 @@
+<view class="container">
+    <view class="space"></view>
+    <view class="head">
+        <image src="/images/q0.png" class="icon"/>
+        <view class="title">常见问题</view>
+        <view class="clear"></view>
+    </view>
+    <scroll-view scroll-y="true" class="listFrame">
+        <view wx:for="{{list}}" class="list" bindtap="goDeail">
+            <image src="/images/q1.png" class="icon"/>
+            <view class="title">{{item.name}}</view>
+            <view class="clear"></view>
+        </view>
+    </scroll-view>
+    <button bindtap="fedback">反馈</button>
+</view>
+<modal title="错误" class="error" hidden="{{popError}}" no-cancel bindconfirm="errClose">
+    {{error}}
+</modal>

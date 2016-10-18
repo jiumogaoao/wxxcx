@@ -1,0 +1,14 @@
+<scroll-view scroll-y="true" class="noRub">
+    <view class="head">
+        <view class="listHead">
+            <view class="left">设备名</view>
+            <view class="center">当前上传/下载速度</view>
+            <view class="right">操作</view>
+        </view>
+    </view>
+    <view wx:for="{{noRub}}" class="list">
+        <view class="left">{{item.name}}</view>
+        <view class="center">{{item.up}}/{{item.down}}</view>
+        <view class="right" bindtap="toBlack" data-id="{{item.id}}">拉入黑名单</view>
+    </view>
+</scroll-view>

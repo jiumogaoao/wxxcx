@@ -1,13 +1,16 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/nav/nav",
-    "pages/shopList/shopList",
-    "pages/productList/productList",
-    "pages/product/product",
-    "pages/shoppingCart/shoppingCart",
-    "pages/balance/balance",
-    "pages/place/place"
+    "pages/remotely/remotely",
+    "pages/domain/domain",
+    "pages/question/question",
+    "pages/fedBack/fedBack",
+    "pages/questionDetail/questionDetail",
+    "pages/loginOrRegest/loginOrRegest",
+    "pages/changeAd/changeAd",
+    "pages/changePhone/changePhone",
+    "pages/routerList/routerList",
+    "pages/scaned/scaned"
   ],
   "window":{
     "backgroundTextStyle":"light",

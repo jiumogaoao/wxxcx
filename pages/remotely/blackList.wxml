@@ -1,0 +1,14 @@
+<scroll-view scroll-y="true" class="blackList">
+    <view class="head">
+        <view class="listHead">
+            <view class="left">编号</view>
+            <view class="center">设备名</view>
+            <view class="right">操作</view>
+        </view>
+    </view>
+    <view wx:for="{{blackList}}" class="list">
+        <view class="left">{{item.id}}</view>
+        <view class="center">{{item.name}}</view>
+        <view class="right" bindtap="toWrite" data-id="{{item.id}}">移出黑名单</view>
+    </view>
+</scroll-view>

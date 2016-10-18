@@ -1,0 +1,71 @@
+.container .logo{
+    display: block;
+    margin: auto;
+    margin-top:30rpx;
+    width:175rpx;
+    height:202rpx;
+}
+.top{
+    width:717rpx;
+    height:121rpx;
+    border: 1px solid #e68469;
+    border-radius: 20rpx;
+    margin: auto;
+    margin-top: 70rpx;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+}
+.left{
+    width:20%;
+    line-height: 121rpx;
+    text-align: center;
+}
+.right{
+    width:80%;
+    line-height: 121rpx;
+    text-indent: 20rpx;
+}
+.changePhone{
+    flex: none;
+    position: absolute;
+    top:0rpx;
+    right:20rpx;
+    line-height: 121rpx;
+    color: #e68469;
+    text-decoration: underline;
+}
+.bottom{
+    width:717rpx;
+    max-height:363rpx;
+    border: 1px solid #e68469;
+    border-radius: 20rpx;
+    margin: auto;
+    margin-top: 70rpx;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+}
+.list{
+    border-bottom: 1px solid #ddd;
+}
+.buttonFrame{
+    margin-top: 50rpx;
+    display: flex;
+}
+.buttonFrame button{
+    width: 40%;
+}
+.dsc{
+    position:absolute;
+    bottom:20rpx;
+    left:0rpx;
+    width:100%;
+    text-align: center;
+    font-size: 12rpx;
+}
+.red{
+    display: inline;
+    color: #f57d62;
+    text-decoration: underline;
+}
